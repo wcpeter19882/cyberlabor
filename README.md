@@ -1,10 +1,10 @@
-# Prompt Tuning Skill
+# Prompt Tuning
 
-A Claude skill for iteratively refining and optimizing prompts using Azure OpenAI API.
+A systematic workflow for iteratively refining and optimizing prompts using Azure OpenAI API.
 
 ## Overview
 
-This skill provides a systematic workflow for prompt tuning through multiple iterations:
+This project provides a systematic workflow for prompt tuning through multiple iterations:
 - Generate output with Azure OpenAI
 - Validate against quality guidelines
 - Refine prompts based on validation results
@@ -24,7 +24,7 @@ This skill provides a systematic workflow for prompt tuning through multiple ite
 
 3. **Install dependencies:**
    ```bash
-   pip install -r .claude/skills/prompttuning/requirements.txt
+   pip install -r requirements.txt
    ```
 
 4. **Configure environment:**
@@ -37,12 +37,10 @@ This skill provides a systematic workflow for prompt tuning through multiple ite
 
 ## Usage
 
-The skill is located in `.claude/skills/prompttuning/`. See `SKILL.md` for detailed workflow instructions.
-
 ### Quick Start
 
 ```bash
-python .claude/skills/prompttuning/llm_call.py \
+python llm_call.py \
     --system-prompt system_prompt.md \
     --user-prompt user_prompt.md \
     --output-file output/test.txt
@@ -53,10 +51,8 @@ python .claude/skills/prompttuning/llm_call.py \
 - `system_prompt.md` - System prompt template (editable sections specified)
 - `user_prompt.md` - User prompt (readonly)
 - `guidelines.md` - Quality validation criteria
-- `.claude/skills/prompttuning/` - Skill implementation
-  - `SKILL.md` - Detailed skill documentation
-  - `llm_call.py` - Azure OpenAI API script
-  - `requirements.txt` - Python dependencies
+- `llm_call.py` - Azure OpenAI API script
+- `requirements.txt` - Python dependencies
 
 ## Dependencies
 
