@@ -1,0 +1,16 @@
+Profile: I am Chao Wang. I am a Principal Applied Scientist at Microsoft. I am reachable at wangchao@microsoft.com. I am operating at a senior research-to-production tier, aligning with Partner and Group-level Engineering Directors and executing with Principal Software Engineering Managers and core Software Engineers. I am a key collaborator with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives with product-driven engineering cycles. I have expertise in applied science for production AI systems, cross-functional technical strategy, and engineering execution practices, so no foundational explanation is needed in those areas.
+Description: Action-oriented catch-up across SOX/RTC and agent engineering: what landed as concrete next steps (hooks, smaller PRs, binaries to share) and what’s worth tracking (inner-loop automation, migration tooling adoption).
+
+Ava: Hi Chao, today is Wednesday, February 4, 2026.
+Andrew: In your SOX RTC bug bash, the room pushed on whether the “ideal distribution” framing implies outputs outside the model’s natural support, and the practical takeaway was to treat it as a controllable sampling target, not a promise of truth.
+Ava: The follow-ups were about durability: model upgrades can drift prompt behavior, so the group converged on iterative tuning plus a maintenance mindset, not “set-and-forget” prompts.
+Andrew: The next session got penciled for next Friday, with a request to go deeper on the counterintuitive techniques and how to keep them from overfitting into brittle, snippet-like instructions.
+
+Ava: On RTC signaling services, the migration tooling discussion got concrete around process shape: the migration agent runs at repo level, but the feedback was to break work into mini-steps with smaller PRs and reviews to reduce context bloat and keep quality tight.
+Andrew: The other actionable thread was extensibility in the Windows-to-Linux workflow: a simple script hook after the inner loop—so teams can plug in rollout/rollback or extra validation—was positioned as high leverage even if the core focus stays on finishing inner-loop automation first.
+
+Ava: In the agent engineering learning series, the PR review tool demo centered on compressing review time by pulling PR context from multiple sources, generating a walkthrough, and optionally applying trivial fixes as separate commits for clean rollback.
+Andrew: The Q&A pressure-tested integration details—token/context limits, local workflow interference, and markdown rendering—and the consistent theme was “make it iterative”: self-check the output, keep changes reversible, and don’t let the tool hide provenance.
+Ava: The near-term next step there is packaging: a binary plus source is planned for sharing so others can contribute, and the ecosystem asks are already forming—extension points, deep links, and automation signals like “ready for review” detection as PR velocity climbs.
+
+Andrew: Net-net for your next week: watch for the inner-loop feature landing and whether the script-hook idea gets traction, and if that PR-review binary drops, it’s a fast way to test how much review throughput you can buy back without changing your team’s fundamentals.

@@ -1,0 +1,19 @@
+Profile: I am Chao Wang, Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier with high-level alignment to Strategic Leadership and core engineering teams. My work specializes in translating scientific theory into scalable engineering frameworks and bridging research initiatives with product-driven engineering cycles. My key collaborators are Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am deeply experienced in applied science, AI, engineering management, and cross-functional technical alignment; no explanation is needed for foundational concepts in these domains.
+
+Description: Action-focused updates on AI workflow integration, agent-driven code review enhancements, and migration tools, emphasizing next-step decisions and technical feedback relevant to engineering and SOX initiatives.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026.
+
+Ava: In the latest SOX bug bash, your AI workflow slide deck triggered a round of technical questions and feedback. The team pressed for clarity on sampling distributions and challenged the use of “intuitive” versus “counterintuitive” prompt techniques.
+
+Andrew: Discussion on prompt maintenance centered on the risk of overfitting through iterative refinement. The group exchanged ideas on spec-driven task management, tool integration, and restoring checkpoints, highlighting frustrations with locked models and the desire for decoupled workflows.
+
+Ava: Follow-up interest was expressed in deeper dives on counterintuitive prompt techniques, with a new session already scheduled to address open questions and tool comparisons.
+
+Andrew: Over in agent engineering, the team showcased a PR review tool that automates code walkthroughs, context gathering, and AI-assisted fixes, while preserving manual review oversight. The demonstration emphasized extensibility, custom presets, and integration with local development tools.
+
+Ava: Feedback focused on future capabilities—pipeline automation, incident analysis, and plugin generation—while the team underscored the need for transparent changes and community-driven improvements.
+
+Andrew: Meanwhile, the tech talk on migration agents revealed evolving strategies in code transformation, API parity, and multi-agent migration workflows. The team highlighted gaps in automated migration and piloted new features for Windows-to-Linux service transitions using OS Porter.
+
+Ava: The discussion closed with enthusiasm for automation hooks and actionable ideas for extending migration tooling, noting pilot adoption metrics and upcoming enhancements for validation and deployment integration.

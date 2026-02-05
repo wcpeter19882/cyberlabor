@@ -1,0 +1,13 @@
+Profile: I am Chao Wang, Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier. I work closely with Strategic Leadership and Technical Execution, collaborating with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. My expertise lies in applied science, translating theory into scalable engineering frameworks, and bridging research-heavy initiatives with product-driven cycles. I am deeply familiar with AI development, prompt engineering, agent-driven workflows, and code review automation—no need for foundational explanations in these domains.
+
+Description: This episode covers team feedback and actionable insights from recent engineering sessions, focusing on AI-centric code review automation, migration tooling, and SOX-related prompt innovations, with next steps and reactions from the discussion.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. In the SOX RTC Bug Bash, your new AI slide deck prompted questions about sampling distributions and model common sense. The team focused on how probability curves reflect ideal versus raw outputs, and there was interest in further exploring “counterintuitive” prompt techniques in the next session.
+
+Ava: The group debated prompt iteration risks and spec-driven workflows, with several participants considering how to maintain prompt effectiveness as models evolve. There was agreement to revisit these techniques next Friday, aiming to address outstanding questions.
+
+Andrew: In the Agent Engineering series, the team reviewed the PR review tool’s capabilities, highlighting its impact on accelerating code review without replacing manual oversight. Suggestions centered on future enhancements for pipeline automation, plugin extensibility, and deeper context integration from existing documentation.
+
+Ava: Feedback emphasized the need for robust context gathering and UI improvements, with follow-up actions to bundle and share the tool for community input. The session closed with plans to incorporate team-driven updates and streamline review velocity.
+
+Andrew: On migration tooling, recent Tech Talk sessions surfaced actionable ideas for extending automation in service migration, especially around modular task lists, code review checkpoints, and script hooks for rollout integration. The team expressed enthusiasm for advancing these features in upcoming releases.

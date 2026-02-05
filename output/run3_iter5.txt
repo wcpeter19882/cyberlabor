@@ -1,0 +1,13 @@
+Profile: I am Chao Wang. I am Principal Applied Scientist at Microsoft. I operate at a senior research-to-production tier, aligning closely with Strategic Leadership and core Technical Execution teams. I collaborate directly with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. My expertise spans applied science, translating theory into scalable engineering frameworks, and bridging research-heavy initiatives with product-driven engineering cycles. I do not require explanations of foundational concepts in applied science, engineering workflows, or AI-driven development tools.
+
+Description: Today’s briefing zeroes in on the reactions and actionable outcomes from your SOX AI presentation, the latest automation advances in migration tooling, and new agent-driven PR review capabilities—plus next steps flagged by your collaborators and engineering peers.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. The SOX team dug into your AI slide deck and pressed for deeper intuition behind prompt engineering—Gavin questioned the probability regions, while Zhiyuan focused on how to tap the model’s inherent expertise for code review standards. You’ll want to keep an eye on Ming’s push for prompt iteration and Wenlong’s call to revisit “counterintuitive” techniques; another session is already on deck for follow-up.
+
+Ava: On the migration front, the group running Package Modernizer and OS Porter is scaling internal adoption fast. The team’s shifting to smaller, targeted PRs for migration steps, and they’re piloting automation hooks in OS Porter for streamlined rollout. Several teams flagged manual review checkpoints as a sticking point, with requests for more extensible scripting in future releases.
+
+Andrew: In agent engineering, momentum is building behind Kiran’s PR review tool—teams are asking for deeper plugin capabilities and more context-driven integration. The next binary drop will bundle source for broader contributions, but expect new audit flows and incident analysis to reshape cross-cutting review processes. Your feedback loop here is crucial as workflows accelerate.
+
+Ava: For your immediate actions, Ming is waiting on spec-driven workflow clarifications before the next session, and the migration group is seeing strong uptake—review the pilot metrics to pinpoint where OS Porter’s automation could further reduce manual effort. If you have cycles, loop with Bingqian and Qiongfang to align on the next AI workflow integration.
+
+Andrew: That’s everything you need right now. For your next steps, focus on automation validation, prompt iteration feedback, and surfacing actionable integration blockers—your collaborators are leaning in, so keep the momentum.

@@ -1,0 +1,30 @@
+Profile: I am Chao Wang. I am a Principal Applied Scientist at Microsoft. I am reachable at wangchao@microsoft.com. I am operating at a senior research-to-production tier, aligning with strategic leadership and driving technical execution with principal engineering managers and core engineers. I am a key collaborator with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives with product-driven engineering cycles. I have expertise in applied science for engineering systems, AI-assisted developer workflows, and research-to-production execution, so I don’t need foundational explanations in those areas.
+Description: Action-oriented catch-up for Chao across RTC migration tooling and AI engineering workflows, with the only “you-presented” segment reduced to the team’s follow-ups and next-session commitments.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026.
+Andrew: From the SOX RTC thread: after your AI slide drop, the room’s main friction point was interpretation—people kept probing what the axes and “ideal vs spiky” regions really mean, and whether the “ideal” implies output beyond the model’s natural support.
+Ava: The practical follow-up that landed: there’s appetite for a deeper second session focused specifically on the “counterintuitive” prompt tactics and how to keep them stable as models change; the group agreed to run it next Friday.
+
+Andrew: On prompt workflow mechanics, the discussion converged on two operational risks: prompt drift across model upgrades, and prompt overfitting from too many refinement loops—ending up with something brittle that behaves like a one-off snippet instead of a reusable instruction set.
+Ava: The mitigation theme was “spec-driven” structure—keep prompts, scripts, task lists, and MVP boundaries explicit so the workflow can be versioned and rolled back cleanly, rather than accreting invisible context.
+
+Andrew: Action you can take before next Friday if you want the follow-up to be sharper: collect 2–3 concrete examples where your team saw drift after a model change, and one example where iterative refinement overfit; that’s what the room kept circling back to.
+Ava: If you want a second lever, bring one “spec kit” template that demonstrates checkpoint/restore and task-list generation end to end—versioning and rollback questions came up repeatedly.
+
+Andrew: Switching to RTC migration tooling: Package Modernizer is being positioned as a repo-level, dependency-graph-driven migration pipeline that can propose multiple design options, then iterate project-by-project and kick out human to-dos when it hits gaps like conditional compilation or missing .NET 8 policies.
+Ava: The most actionable feedback from the room was process, not capability: break migrations into smaller modular steps with code review after each step, because giant PRs blow up agent context and slow human validation; the team acknowledged they’ll move toward smaller commits.
+
+Andrew: OS Porter updates were more about coverage and the next automation jump: it’s currently strong on build-error fixing and task organization, with reported coverage around 70% of identified migration tasks in one service analysis, but it still leans on humans for validation and config completion.
+Ava: The near-term bet is the “inner loop” feature—automating local builds, unit tests, and sandbox validation with iterative AI passes—so teams spend less time in manual turnaround.
+
+Andrew: The open product idea that got real traction: add a simple extensibility hook after the inner loop so teams can run their own rollout/rollback or extra validation scripts—something lightweight that can call into ADO APIs without redesigning the tool.
+Ava: If your org cares about SOX-style rigor, that hook concept matters because it’s the bridge from “AI fixed my build” to “AI ran the same gated checks every time.”
+
+Andrew: On agent engineering: the learning series demoed a PR review tool that tries to solve the non-coding bottleneck—context gathering, walkthroughs, and turning review comments into small, revertible fix commits rather than one big “AI changed everything” blob.
+Ava: The key implementation detail was aggressive context management: it builds a dedicated work tree and pulls in work-item and discussion artifacts so the model sees what it needs without blowing token limits.
+
+Andrew: The ecosystem asks were consistent: extension points so teams can add their own review modes, better rendering than plain markdown for dependency flows, and workflow glue like deep links and “ready for review” detection as PR velocity rises.
+Ava: The concrete next step from that session: a binary plus source drop for community contributions, with the backend designed so new capabilities can be appended without rewriting the core.
+
+Andrew: If you want one tight set of actions for your week: decide whether you want to push the “script hook after inner loop” idea into the OS Porter backlog, and prep the two drift/overfit examples so your next Friday session stays grounded in failures your team actually hit.
+Ava: And if you’re triaging where to invest, watch the PR-review-tool pattern: it’s the same story as migration—small, auditable steps beat giant AI commits, especially when your compliance bar is high.

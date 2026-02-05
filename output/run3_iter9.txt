@@ -1,0 +1,13 @@
+Profile: I am Chao Wang. I am Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier, aligning with Partner and Group-level Engineering Directors and Principal Software Engineering Managers. I work closely with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. My core expertise is translating scientific theory into engineering frameworks, bridging research initiatives with product-driven cycles in applied science. I have deep familiarity with SOX, action-oriented project execution, and strategic technical alignment; I do not require explanations of foundational concepts in these domains.
+
+Description: Today’s update zeroes in on engineering automation, AI-centric workflows, and migration tooling, emphasizing actionable takeaways and next steps relevant to your SOX and cross-functional initiatives.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. Your AI-infused workflow slides prompted a series of follow-up questions from the team on sampling distributions, prompt best practices, and spec-driven development. They’re interested in how your approach to model “common sense” can be applied across code review and task management, and several want to revisit counterintuitive prompt techniques in the next session.
+
+Ava: The tech talk on migration tooling surfaced two major developments: teams are piloting Package Modernizer for component upgrades across dozens of projects, and OS Porter is being leveraged to automate Windows-to-Linux transitions. There’s momentum to extend automation further—script hooks for rollouts and asynchronous deployment are on the roadmap, driven by demand for tighter integration with team workflows.
+
+Andrew: The agent engineering session showcased a PR review tool that aggregates context from multiple sources and enables AI-powered fixes, but manual review remains critical. Future enhancements will focus on automating build and incident analysis, with agent-driven extensions designed to plug into existing pipelines for rapid iteration.
+
+Ava: You’ll want to keep an eye out for new automation hooks in OS Porter and evolving best practices around prompt iteration—both are directly relevant to your work in scaling applied science frameworks. The next SOX session will dig deeper into prompt refinement and model alignment, so flag anything you want clarified before Friday’s follow-up.
+
+Andrew: Let us know what actions or blockers you need surfaced ahead of your next roundtable—your cross-functional leverage puts you in the driver’s seat for these integration initiatives.

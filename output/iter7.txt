@@ -1,0 +1,18 @@
+Profile: I am Chao Wang. I am a Principal Applied Scientist at Microsoft. I am wangchao@microsoft.com. I am operating at a senior research-to-production tier, aligning with strategic leadership and driving technical execution with engineering managers and software engineers. I am a key collaborator with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives into product engineering cycles. I have expertise in applied science for production systems, cross-functional technical alignment, and engineering execution.
+
+Description: Action-oriented catch-up on what changed around SOX RTC and adjacent agent tooling this week: concrete follow-ups from your AI/prompting session, plus the most actionable takeaways from the migration and PR-review tool talks.
+
+Ava: Hi Chao, today is Wednesday, February 4, 2026.
+Ava: From your SOX RTC bug bash session, the room’s main follow-up is a request to go deeper on the “counterintuitive” prompting playbook next Friday, with more concrete examples and guardrails.
+Andrew: Two pressure points came back in Q&A: people want a cleaner way to interpret that sampling graph without getting lost in “axes” debates, and they’re worried about prompt drift across model upgrades—so they’re looking for a repeatable maintenance loop, not a one-off trick.
+Ava: There was also momentum around the spec-driven workflow angle—versioning and rollback came up explicitly—people latched onto the idea of checkpoints as the safety rail so your workflow doesn’t turn into an unreviewable blob.
+
+Andrew: Separate thread: Kiran’s agent engineering session is converging on “review is the bottleneck,” and his Stas Doc PR-review tool is designed to compress the non-coding lifecycle work—context gathering, walkthroughs, and iterative review modes—into something you can run locally.
+Ava: The practical next step there is distribution: he said he’ll share a binary plus source for contributions, and the group’s asks clustered around extensibility—plugin hooks, deep links, and automation that can keep up with higher PR velocity without breaking review hygiene.
+Andrew: If your SOX flows are getting heavier, the interesting overlap is this: the tool’s context packaging—work items, design notes, PR description, and a bounded worktree—maps well to your “spec + task list” framing, and it’s exactly the kind of mechanism teams want to reduce drift.
+
+Ava: On the Windows-to-Linux and .NET migration side, the Tech Talk had two clear signals: teams are treating VS Code extensions as the delivery vehicle, and they’re optimizing for smaller, reviewable increments—explicitly calling out splitting large PRs into mini-steps with review gates.
+Andrew: OS Porter is pushing next into an “inner loop” that automates local build and test iterations; the open idea from Q&A was a lightweight script hook so teams can bolt on their own rollout/rollback automation after that loop completes.
+
+Ava: Your near-term action: for next Friday, bring one crisp, end-to-end example that ties together your prompt approach with a checkpoint/rollback story—something people can adopt without betting their whole workflow on a single model.
+Andrew: And if you want leverage fast, ping Bingqian or Bo to see whether SOX RTC can pilot the PR-review context bundling pattern on one real review cycle, then feed the deltas back into your spec-driven template.

@@ -1,0 +1,13 @@
+Profile: I am Chao Wang, Principal Applied Scientist at Microsoft. I operate at a senior research-to-production tier, aligning closely with strategic leadership and technical execution. My collaborators include Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I specialize in bridging scientific theory with scalable engineering and work across applied science and product-driven engineering cycles. I am deeply familiar with SOX and action-oriented workflows, and do not require explanations of foundational concepts in these domains.
+
+Description: Today's coverage prioritizes actionable outcomes and follow-up steps from your recent AI prompt and spec-driven workflow presentation, as well as reactions and next actions from technical discussions on migration tooling and agent-driven code review.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. The team’s feedback after your AI slide deck focused on refining prompt instructions and managing overfitting risk. Gavin raised concerns about the ideal output distribution and “fake” responses, prompting deeper discussion on sampling strategies and model boundaries. There’s interest in your counterintuitive prompt techniques—with Wenlong suggesting a follow-up session to explore them further.
+
+Ava: On the spec-driven workflow, you sparked questions around versioning and rollback, especially integrating with dev tools like VS Code and separating prompt logic from fixed models. The team’s keen to see how your spec-driven approach can streamline MVP definition and avoid requirement drift.
+
+Andrew: In the Tech Talk on migration, the Package Modernizer and OS Porter sessions drew attention to modularizing agent steps and enhancing code review granularity. Suggestions included splitting migration PRs and adding automation hooks, with the discussion highlighting the need for scriptable deployment validation.
+
+Ava: The agent engineering session showcased the PR review tool’s integration with DevOps and code walkthroughs, but the team flagged manual review as a continuing bottleneck. Future enhancements may automate incident analysis and plugin generation, with openness to extension models for custom workflows.
+
+Andrew: For your next steps, the group’s looking for more on prompt iteration stability and deeper automation for migration and review processes. That double-check mechanism you referenced is top of mind for Friday’s follow-up.

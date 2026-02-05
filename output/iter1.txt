@@ -1,0 +1,21 @@
+Profile: I am Chao Wang. I am a Principal Applied Scientist at Microsoft. I am wangchao@microsoft.com. I am operating at a senior research-to-production tier, aligning with Partner and Group-level Engineering Directors and executing with Principal Software Engineering Managers and core Software Engineers. I am a collaborator with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives into product-driven engineering cycles. I have expertise in applied science for production systems, AI-assisted engineering workflows, and cross-functional technical leadership.
+
+Description: Action-oriented catch-up across SOX and adjacent engineering talks: what landed from others after your AI session, plus concrete workflow ideas from agent-based migration and PR review automation.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026.
+Andrew: From the SOX RTC bug bash session you drove: the room’s main pull was clarifying how to reason about that sampling graph—people kept circling on what “ideal” means versus “out-of-distribution,” and how to interpret axes without pretending it’s actually 1-D.
+Ava: The practical follow-up energy landed on two things: first, turning “model common sense” into reusable standards people can cite—like anchoring reviews to an external baseline and only using tight constraints as a blacklist; second, not letting iterative prompt refinement calcify into something brittle when the model revs.
+Andrew: Next Friday is the explicit continuation—there was a direct ask to go deeper on the counterintuitive techniques, and the double-check / resampling framing resonated as the mechanism people want to operationalize.
+
+Ava: On the migration tooling tech talk: Package Modernizer is being pushed toward smaller, more reviewable change units—there was a pointed suggestion to break big migrations into modular task lists with code review gates after each mini-step to avoid context bloat and improve agent reliability.
+Andrew: The other notable outcome there: the migration process is being treated as “design options then human choice,” with explicit to-dos emitted for gaps—so teams can plan manual closure instead of discovering it late in build or test.
+
+Ava: OS Porter’s discussion converged on extensibility. The inner-loop automation is the near-term deliverable, but the most actionable idea from the Q&A was a simple post-inner-loop script hook so service teams can plug in their own rollout, rollback, or extra validation—think ADO API-driven steps without the tool owning deployment logic.
+Andrew: If that hook lands, it’s the difference between “AI helps fix build errors” and “AI becomes a pipeline component,” and multiple people sounded ready to pilot that path.
+
+Ava: The Agent Engineering learning series was basically a blueprint for speeding up review, not codegen. The PR review tool demo emphasized aggressive context gathering—work items, design notes, meeting artifacts—then keeping token usage bounded by forking only what’s necessary into a work tree.
+Andrew: The concrete workflow win: review presets plus a generated walkthrough that orders the diff into a narrative path, and then “auto-fix” that applies trivial changes as separate commits so rollback stays cheap and trust stays intact.
+Ava: The ecosystem asks were predictable but important: extension points so teams can add their own checks, and better workflow glue—deep links, “ready for review” detection, and handling the reality that AI increases PR velocity faster than humans can read.
+
+Andrew: Your near-term moves: lock the agenda for Friday around the two open loops—how to operationalize the double-check sampling pattern, and how to keep prompts from overfitting across model upgrades.
+Ava: And if SOX cares about throughput, it’s worth sanity-checking whether that PR review tool’s preset + walkthrough pattern can be piloted in your lane—start with one review mode that maps to SOX risk, then expand once the workflow sticks.

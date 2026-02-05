@@ -1,0 +1,12 @@
+Profile: I am Chao Wang, Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier and working closely with strategic leadership and technical execution teams. I collaborate with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao, and my expertise lies in applied science—specifically, translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives with product-driven engineering cycles. I do not need explanations for foundational concepts in AI, code review workflows, or agent-driven tool development.
+
+Description: Action-focused updates on AI prompt engineering, tooling for code review automation, and migration workflows, highlighting team responses, actionable outcomes, and next steps across SOX and agent engineering initiatives.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026.
+Ava: The SOX RTC session opened with discussion around your new AI slide deck—questions from the team focused on interpreting model output distributions and prompt sampling, with follow-up interest in practical counterintuitive prompt strategies for code review.
+Andrew: When your spec-driven approach surfaced, the team pressed for details on versioning, checkpointing, and command-line flexibility; feedback pointed to the need for robust rollback and decoupling prompt workflows from fixed models.
+Ava: Double-check mechanisms for code review and iterative refinement prompted agreement to deepen exploration of counterintuitive prompt techniques next session, with the group scheduling a follow-up for unresolved topics.
+Andrew: In the agent engineering series, the team demoed a PR review tool integrating AI feedback, context gathering, and automated fixes—proposals for extension models and deeper workflow integration drove the discussion on future enhancements.
+Ava: The session wrapped with a commitment to share binaries and source code for team-driven contributions, emphasizing ongoing improvements to review acceleration and incident response.
+Andrew: On migration tooling, the tech talk highlighted team adoption of Package Modernizer and OS Porter for .NET and Windows-to-Linux transitions; team feedback centered on automation hooks, modular PR reviews, and rollout script extensibility.
+Ava: Next steps for migration tools include piloting asynchronous automation and refining migration agent commit granularity, as suggested during Q&A, with ongoing collaboration to reduce manual review cycles.

@@ -11,7 +11,20 @@ Iteratively refine prompts by generating output, validating against guidelines, 
 
 1. Azure CLI logged in: `az login`
 2. `.env` file at project root with Azure OpenAI configuration
-3. Dependencies installed: `pip install -r .claude/skills/prompttuning/requirements.txt`
+3. Dependencies installed (see Installation section below)
+
+## Installation
+
+If the script fails with a missing package error, install dependencies:
+
+```bash
+pip install -r .claude/skills/prompttuning/requirements.txt
+```
+
+This installs:
+- `azure-identity` - Azure CLI credential support
+- `openai` - Azure OpenAI SDK
+- `python-dotenv` - Environment variable loading
 
 ## Required Inputs
 
@@ -19,85 +32,105 @@ The user must provide paths to these files:
 
 | Input | Description |
 |-------|-------------|
-| System Prompt | Text file containing the system prompt to tune |
-| User Prompt | Text file containing the user prompt to tune |
-| Content | Text file with content to process (used for testing prompts) |
+| System Prompt | Text file containing the system prompt to tune (specify which sections can be modified) |
+| User Prompt | Text file containing the user prompt (typically readonly) |
 | Guidelines | Text file with output quality guidelines for validation |
 | Output File | Path where generated output will be saved |
 | Iterations | Number of tuning cycles (default: 5) |
 
 ## Workflow
 
-For each iteration, follow these steps:
+**CRITICAL: This is a sequential, iterative process. Each iteration MUST complete before the next begins. Do NOT batch or parallelize iterations.**
 
-### Step 1: Generate Output
+### For EACH iteration (1 through N):
 
-Run the LLM call script to generate output with current prompts:
+#### Step 1: Generate Output
+
+Run the LLM call script:
 
 ```bash
 python .claude/skills/prompttuning/llm_call.py \
     --system-prompt <system_prompt_file> \
     --user-prompt <user_prompt_file> \
-    --content <content_file> \
     --output-file <output_file>
 ```
 
-### Step 2: Validate Output
+#### Step 2: Read and Validate Output
 
-Read the output file and the user-provided guidelines file:
-- Output: Read from `<output_file>`
-- Guidelines: Read from user-provided `<guidelines_file>`
+1. **Read the generated output file**
+2. **Read the guidelines file**
+3. **Validate as a senior designer:**
+   - Check EACH guideline item against the output
+   - Score each category (1-10)
+   - Identify SPECIFIC gaps with examples from the output
+   - Note what's working well
+   - Calculate overall score
 
-Validate the output against EVERY guideline as a **senior designer**:
-- Be critical and thorough
-- Check each checkbox item in the guidelines
-- Score each category 1-10
-- Identify specific gaps and issues
-- Note what works well
+#### Step 3: Analyze and Refine Prompts
 
-### Step 3: Refine Prompts
+Based on validation results:
 
-Based on validation results, update the system and/or user prompt files.
+1. **Identify the biggest gaps** - What guidelines scored lowest?
+2. **Determine root cause** - Why is the output failing this guideline?
+3. **Formulate prompt changes** - What instruction would fix this?
+4. **Update the system prompt** (only the sections user specified as editable)
 
 **CRITICAL RULES for prompt refinement:**
-- Prompts must NEVER be content-specific
-- Improve structure, clarity, and instructions
-- Add constraints that help meet guidelines
-- Prompts should work for ANY content in the domain
-- Focus on HOW to process, not WHAT to process
+- Prompts must NEVER be content-specific (no examples with real names, projects, etc.)
+- Rules should describe PATTERNS, not instances
+- Each refinement should target a specific validation gap
+- Changes should be additive/incremental, not wholesale rewrites
 
-### Step 4: Iterate
+#### Step 4: Loop to Next Iteration
 
-Repeat Steps 1-3 for the specified number of iterations (default: 5).
+After updating the prompt, RETURN TO STEP 1 with the modified prompt.
 
-Track progress across iterations:
-- Note which guidelines improved
-- Note which guidelines still need work
-- Observe patterns in what prompt changes are effective
+Do NOT proceed to the next iteration without:
+- Generating new output with the updated prompt
+- Validating that output
+- Making further refinements if needed
 
-### Step 5: Final Report
+### After All Iterations: Final Report
 
-After all iterations, provide a summary:
-- Starting vs ending guideline scores
-- Key prompt changes that improved quality
-- Remaining gaps (if any)
-- Final refined prompts
+Provide a summary:
+- Score progression (iteration 1 → N)
+- Key prompt changes and their impact
+- Remaining gaps
+- Before/after comparison of key outputs
+
+## Anti-Patterns (What NOT to Do)
+
+❌ **DO NOT** run all iterations in a loop without validation between each
+❌ **DO NOT** batch generate outputs for all iterations at once
+❌ **DO NOT** make prompt changes without first validating the current output
+❌ **DO NOT** add content-specific examples to prompts
+❌ **DO NOT** skip reading the output file before validation
 
 ## Example Session
 
 User provides:
-- System prompt: `prompts/system.txt`
-- User prompt: `prompts/user.txt`  
-- Content: `content/article.txt`
-- Guidelines: `guidelines/quality.txt`
-- Output file: `output/result.txt`
-- Iterations: 3
+- System prompt: `system_prompt.md` (editable section: `# Personalization`)
+- User prompt: `user_prompt.md` (readonly)
+- Guidelines: `guidelines.md`
+- Output file: `output/iteration.txt`
+- Iterations: 5
 
-Execution:
-1. Run `llm_call.py` → read `output/result.txt`
-2. Read `guidelines/quality.txt` → validate output → identify issues
-3. Update `prompts/system.txt` and/or `prompts/user.txt`
-4. Repeat 2 more times
+**Iteration 1:**
+1. Run `llm_call.py` → generates `output/iteration.txt`
+2. Read output → Read guidelines → Validate → Score: 42/60
+3. Gap identified: "Passive content has too many names"
+4. Update `# Personalization` section: Add stricter name minimization rule
+
+**Iteration 2:**
+1. Run `llm_call.py` with UPDATED prompt → new output
+2. Read output → Validate → Score: 46/60 (↑4)
+3. Gap identified: "Not enough 'you' usage"
+4. Update prompt: Add required "you/your" usage rule
+
+**Iteration 3:**
+1. Run `llm_call.py` with UPDATED prompt → new output
+2. Read output → Validate → Score: 49/60 (↑3)
+3. ...continue...
 5. Report final results
 
 ## Senior Designer Perspective

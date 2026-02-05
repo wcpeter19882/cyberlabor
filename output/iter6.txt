@@ -1,0 +1,20 @@
+Profile: I am Chao Wang. I am a Principal Applied Scientist at Microsoft. I am reachable at wangchao@microsoft.com. I am operating at a senior research-to-production tier, aligning with Partner and Group-level Engineering Directors and executing with Principal Software Engineering Managers and core Software Engineers. I am a key collaborator with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives with product-driven engineering cycles. I have expertise in applied science research-to-production execution, cross-functional technical leadership, and engineering framework design, so I don’t need foundational explanations in those areas.
+Description: Action-oriented catch-up across SOX/RTC and agent tooling: what landed after Chao’s AI session, plus the most actionable takeaways from RTC migration tooling and AI-centric PR review automation.
+
+Ava: Hi Chao, today is Wednesday, February 4, 2026—your AI slides triggered two concrete follow-ups: the group wants a deeper, hands-on continuation on the “counterintuitive” prompt patterns, and they want guardrails for prompt iteration so it doesn’t overfit as models change.
+Andrew: The sharpest pushback landed on the sampling graph: people kept circling the axes and whether the “ideal” region implies fabrication; net is you’ll want a cleaner mental model and a crisper way to explain “targeting” without sounding like you’re asking the model to exceed its support.
+Ava: There was also an explicit request to go further on the double-check pattern—multi-sampling as a confidence lever—so your next session can turn that into a repeatable workflow people can copy.
+Andrew: Next Friday is penciled in for the continuation, with “counterintuitive techniques” as the headline and open Q&A time reserved.
+
+Ava: SOX/RTC migration tooling: Package Modernizer is already driving volume—100-plus merged PRs and 400-plus created—so the conversation shifted to operational hygiene: smaller PRs, modular task breakdown, and review checkpoints to keep agent context tight.
+Andrew: One actionable suggestion that stuck: treat migrations as mini-steps with code review after each step; the owner acknowledged plans to split large PRs into smaller, focused commits.
+Ava: Accessibility is straightforward—teams can install the VS Code extension directly—but the expectation is you reach out for enablement if you want the workflow tuned to your repo patterns.
+
+Andrew: OS Porter is being positioned as the Windows-to-Linux accelerator with a real adoption signal—dozens of active users and 50-plus services—while it’s still primarily strongest at build-error class fixes and guided tasking.
+Ava: The most important near-term delta is the “inner loop” feature: automated local build and test iterations to shrink turnaround time; rollout/rollback automation is not in scope yet, but there’s momentum around adding a simple script hook so teams can plug in their own deployment or validation steps.
+
+Ava: Agent Engineering learning series: the PR review tool demo landed as an end-to-end workflow—context harvesting, review presets, walkthrough generation, and auto-fix as separate commits so changes are reversible and auditable.
+Andrew: The most practical takeaway for your world is the context strategy: it deliberately forks only the necessary files into a work tree and pulls Work IQ plus work item data to stay under token limits while still grounding the review.
+Ava: Two forward-looking threads to watch: an extension model so teams can add their own capabilities, and pushing beyond PR review into build/deploy automation and incident investigation—assuming grounding data can be normalized into markdown reliably.
+
+Andrew: Your immediate next moves are simple: lock the agenda for next Friday around the two asks—axes/“ideal distribution” clarity and a non-overfitting iteration recipe—and decide whether you want to fold the script-hook idea into your SOX automation backlog as a lightweight win.

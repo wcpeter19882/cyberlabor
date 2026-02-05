@@ -1,0 +1,13 @@
+Profile: I am Chao Wang, Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier with high-level strategic and technical alignment. I work closely with collaborators Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. My expertise lies in translating scientific theory into scalable engineering frameworks and bridging research-heavy initiatives with product-driven engineering cycles. I am deeply action-oriented and actively engaged in SOX workflows and AI-related development, requiring no foundational explanations in these domains.
+
+Description: Today’s update is tailored for you, focusing on actionable developments in AI-assisted code review tools, SOX RTC bug bash insights, and new automation capabilities in migration and prompt engineering—all filtered for direct impact and relevance.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. Your SOX session sparked a practical discussion on leveraging intuitive and counterintuitive prompt techniques—your team was keen to pinpoint how to extract genuine “common sense” from models and adapt code review standards without overfitting. There was real interest in your approach to spec-driven workflows and restoring checkpoints, with a follow-up session already scheduled to go deeper on those counterintuitive tricks.
+
+Ava: One participant in the agent engineering series showcased a PR review tool that’s automating code walkthroughs and integrating feedback from multiple context sources. The team pressed for details on context accuracy and extensibility, leading to plans for future plugin models and agent-generated extensions. Community contribution is opening up, with binaries and source code promised for wider testing.
+
+Andrew: You’ll notice momentum in migration tooling—Package Modernizer’s iterative agent strategy drew questions about granularity and modularization, prompting the team to refine PR splitting and manual review steps. For OS Porter, the discussion centered on automation hooks and rollout extensibility, as participants debated script integration to streamline deployment beyond the inner loop.
+
+Ava: Your insights on prompt iteration risks—especially overfitting—got traction. The team reflected on double-check mechanisms and the value of sampling for confidence in outcomes. Next Friday’s session is set to address lingering questions and expand on the techniques you introduced.
+
+Andrew: That wraps the key moves across your active threads. You’re driving direct follow-ups in SOX and shaping prompt workflows for the next round. Let’s see how your team’s automation ideas play out in the upcoming sessions.

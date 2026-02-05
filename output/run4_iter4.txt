@@ -1,0 +1,15 @@
+Profile: I am Chao Wang. I am Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier and working closely with strategic leadership and principal engineering managers. My key collaborators include Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I focus on applied science—translating scientific theory into scalable engineering frameworks, bridging research-heavy initiatives with product-driven engineering cycles. I have deep expertise in AI, prompt engineering, code review automation, and integrating scientific methods into production software, so I do not need foundational explanations in these domains.
+
+Description: Today’s update zeroes in on reactions to your AI prompt engineering presentation, critical follow-up in SOX and RTC automation, and actionable feedback from the latest code review tool showcase—directly connecting team momentum to your ongoing applied science initiatives.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. The team jumped right into feedback after you shared your new AI prompt techniques. The discussion turned to how iterative prompt refinement can risk overfitting—one participant flagged that prompts might become too specialized, prompting calls to keep instructions general after a quick start and revisit for drift as models evolve.
+
+Ava: You’ll want to note the interest in your spec-driven workflow. The group asked for more on integrating prompt templates and MVP tracking tools, and there’s demand for hands-on demos of spec kit and spacket in future SOX sessions. Questions about versioning and rollback led to a discussion about restoring checkpoints in VS Code, with the team comparing this to Copilot’s limitations.
+
+Andrew: The agent engineering group reacted to the PR review tool demo by focusing on extension potential. The team pressed for ways to append custom plugins and automate pipeline steps, especially for incident analysis and log review. You’ll see momentum building around community contributions, with a binary and source package promised for feedback-driven improvements.
+
+Ava: Over in the RTC Tech Talk, suggestions to modularize migration agents and split large PRs for code modernization landed well. The presenter acknowledged the push for smaller commits and more granular automation, signaling a shift toward streamlined migration workflows—worth watching as teams experiment with new hooks and automation for deployment.
+
+Andrew: You’ve got several open requests for deeper dives on counterintuitive prompt techniques and spec-driven development in the next session. Expect more targeted questions on prompt drift and integration with dev tools, as the team schedules a follow-up to address unresolved topics.
+
+Ava: That’s the latest pulse—your SOX and RTC teams are pushing for more automation, sharper prompt workflows, and practical demos. Blockers are surfacing around prompt maintenance and migration agent granularity, but the energy is squarely on action and iteration.

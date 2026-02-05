@@ -67,7 +67,7 @@ def call_llm(
             {"role": "user", "content": user_prompt},
         ],
         temperature=temperature,
-        max_tokens=max_tokens,
+        max_completion_tokens=max_tokens,
     )
     return response.choices[0].message.content
 

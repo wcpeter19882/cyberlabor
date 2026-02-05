@@ -1,0 +1,17 @@
+Profile: I am Chao Wang. I am Principal Applied Scientist at Microsoft. I am operating at a senior research-to-production tier, with high-level alignment to Strategic Leadership (Partner and Group-level Engineering Directors) and Technical Execution (Principal Software Engineering Managers and core Software Engineers). I am collaborating closely with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on Applied Science, specializing in translating scientific theory into scalable engineering frameworks, and I bridge the gap between research-heavy initiatives and product-driven engineering cycles. I have deep expertise in SOX compliance, AI prompt engineering, and tools for code migration and review—so I do not require explanations of fundamental concepts in these areas.
+
+Description: Action-oriented updates on SOX team bug bash, AI prompt workflows, and automation advances in code migration and review tools—focusing on reactions, next steps, and key recommendations from your collaborators and teams.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. Your SOX team responded quickly to your new AI slide deck—Gavin’s question about output distributions led to a discussion clarifying how ideal responses versus raw model outputs are visualized, and the group pushed for more hands-on exploration of counterintuitive prompt techniques next week.
+
+Ava: Your suggestion to leverage model “common sense” in code review workflows sparked follow-up from Zhiyuan and Shuo, who both challenged the team to refine iterative prompt strategies to avoid overfitting and drift, with Ming and Wenlong requesting a double-check mechanism for higher confidence—look for targeted prompt sessions on Friday.
+
+Andrew: In the Tech Talk, the OS Porter migration demo prompted Kiran to propose a deployment hook for rollout automation, which Yifan and Yanan flagged for potential future integration; immediate next steps are focused on extending script hook capabilities without disrupting OS Porter’s core pipeline.
+
+Ava: The PR tool walkthrough in Agent Engineering led Tyler to pitch an extension model for user-driven plugin development, and the team agreed to prioritize modularity for faster cross-team adoption—Kiran is packaging a binary and source for wider contributions, with feedback cycles centering on manual review support and incident analysis automation.
+
+Andrew: Your visibility on the spec-driven workflow means the team is now exploring ways to decouple legacy dependencies from prompt templates, aiming for lightweight MVP pipelines—expect the next session to drill deeper into integrating version management with multi-model support.
+
+Ava: You should watch for follow-up actions from Ramesh, Qiongfang, and Bingqian on AI workflow adoption, as their teams flagged interest in refining code review standards and automating context gathering—keep a close eye on how these changes align with your applied science frameworks.
+
+Andrew: Next, be ready to act on the team’s recommendations for prompt iteration and automation hooks in migration tools—your feedback loop is driving the next phase of tool integration and spec management.

@@ -1,0 +1,18 @@
+Profile: I am Chao Wang. I am a Principal Applied Scientist at Microsoft. I am wangchao@microsoft.com. I am operating at a senior research-to-production tier, aligning with strategic leadership and driving technical execution with engineering managers and core engineers. I am a key collaborator with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am focused on translating scientific theory into scalable engineering frameworks and bridging research initiatives into product engineering cycles. I have expertise in applied science delivery, AI-assisted engineering workflows, and cross-functional execution, so I don’t need foundational explanations in those areas.
+Description: Updates across SOX/RTC and agent engineering: what landed as follow-ups to your AI session, plus the most actionable automation ideas raised in the RTC migration tooling and PR-review agent discussions.
+
+Ava: Hi Chao, today is Wednesday, February 4, 2026.
+Ava: In your SOX RTC bug bash session, the main follow-ups were pressure-testing whether the “ideal” output band is steering into fabrication, and nailing down what the axes actually mean when you talk about sampling points in a high-dimensional space.
+Andrew: The practical thread that stuck: people want a repeatable way to extract a model’s “review standard” on demand, but they’re worried about drift across model upgrades—so the expectation is you’ll need a maintenance loop, not a one-and-done prompt.
+Ava: Another concrete takeaway others latched onto was the overfitting warning: iterative prompt refinement can collapse into brittle, overly specialized instructions, so the ask is to keep prompts general-purpose after the initial bootstrap.
+Andrew: Next session is already teed up for Friday, with a request to go deeper on the counterintuitive prompt techniques and the double-check / multi-sampling style people are using to raise confidence.
+
+Ava: On the RTC signaling services tech talk—two automation ideas got explicit traction in Q&A: break big migrations into smaller task-list steps with tighter review loops, and treat design proposals as selectable options rather than a single “best” plan.
+Andrew: The migration agent granularity was clarified as repo-level orchestration with project-by-project execution; the actionable change coming out of the discussion was splitting large PRs into smaller, focused commits to reduce context bloat and review risk.
+Ava: On OS Porter specifically, the sharpest next-step request was an extensibility hook after the inner-loop completes—basically “let teams run their own script” for rollout/rollback or extra validations, without the tool having to own every pipeline detail.
+
+Andrew: In the Agent Engineering learning series, the PR review tool demo landed as a workflow play: aggressively gather context from work items, meeting notes, and related code—not just the diff—then run preset review modes and emit results as ADO comments plus a walkthrough.
+Ava: The part that will matter to your SOX world: it can turn trivial review feedback into separate auto-fix commits, with a manual gate, so auditability stays intact while throughput goes up.
+Andrew: The open ecosystem direction is clear: extension points, plugins people can add, and eventually agents that generate plugins on demand—plus longer-term ambitions around build/deploy automation and incident investigation, assuming grounding data is made ingestible.
+
+Ava: If you want one concrete action to push this week: have your Friday session explicitly decide whether the team is standardizing on a spec-driven workflow template—Constitution, Specs, Task Lists—so your prompts and checkpoints don’t sprawl as the model and tooling evolve.

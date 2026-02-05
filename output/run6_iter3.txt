@@ -1,0 +1,15 @@
+Profile: I am Chao Wang, Principal Applied Scientist at Microsoft, operating at a senior research-to-production tier with strategic leadership and technical execution responsibilities. My work bridges scientific theory and large-scale engineering, with direct cross-functional influence across research and core product development teams. I collaborate closely with Ramesh R, Qiongfang Zhang, Bingqian Shen, Bo Lu, Yu Jin, Meng Zhou, and Wanqin Cao. I am deeply involved in translating advanced AI concepts and frameworks into scalable, production-grade solutions and have expertise in SOX compliance, agent engineering, and AI-driven workflow optimization. Given my background, I do not require explanations of foundational AI concepts, code review workflows, or enterprise migration strategies.
+
+Description: Action-focused updates on AI-driven code review tooling, agent-based migration, and prompt engineering, emphasizing community feedback, technical integrations, and next steps from the latest SOX and agent engineering meetings.
+
+Andrew: Hi Chao, today is Wednesday, February 4, 2026. Your new AI workflow slides in the SOX RTC Bug Bash session sparked questions about how to balance intuitive prompts with counterintuitive techniques—the group focused on model “common sense” and ways to avoid overfitting during prompt iteration. Several participants raised concerns about prompt drift with model upgrades, and your spec-driven approach drew interest for its flexibility in managing code contributions and versioning.
+
+Ava: The team discussed practical tactics for integrating restore checkpoints with VS Code and highlighted the frustration around being locked to a single model in legacy tools. Interest is shifting toward command-line utilities that decouple prompt workflows from specific models, which may align with your current projects.
+
+Andrew: In the agent engineering series, the PR review tool demonstration received positive feedback for its context gathering and review presets, including code walkthroughs and auto-fix features. One participant emphasized the need for extensible plugin models for future updates, while suggestions focused on deep linking, ready-for-review detection, and improved incident investigation workflows.
+
+Ava: The agent-driven migration and tooling session highlighted the value of multi-agent design for .NET and Windows-to-Linux transitions. The team’s discussion centered on how tools like Package Modernizer and OS Porter streamline migration, with feedback on enhancing automation hooks in the rollout process. Next steps may include piloting asynchronous script integration and expanding internal adoption based on recent usage metrics.
+
+Andrew: You’ll see more cross-team interest in leveraging these workflows for upcoming SOX initiatives and agent-driven engineering cycles. Your input on keeping prompts adaptable and workflows decoupled remains central to how these teams approach AI and migration challenges.
+
+Ava: If you want deeper technical dives or specific action items from these sessions, let us know which threads to prioritize next.
