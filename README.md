@@ -15,7 +15,7 @@ This project provides a systematic workflow for prompt tuning through multiple i
 1. **Prerequisites:**
    - Azure CLI logged in: `az login`
    - Python 3.8+
-   - Enable Claude skills in VSCode
+   - Enable Claude skills in VSCode (set `chat.useAgentSkills` to true in settings)
 
 2. **Clone the repository:**
    ```bash
