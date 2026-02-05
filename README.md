@@ -15,6 +15,7 @@ This project provides a systematic workflow for prompt tuning through multiple i
 1. **Prerequisites:**
    - Azure CLI logged in: `az login`
    - Python 3.8+
+   - Enable Claude skills in VSCode
 
 2. **Clone the repository:**
    ```bash
@@ -22,12 +23,7 @@ This project provides a systematic workflow for prompt tuning through multiple i
    cd cyberlabor
    ```
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure environment:**
+3. **Configure environment:**
    Create a `.env` file in the project root with:
    ```
    AZURE_OPENAI_ENDPOINT=your_endpoint
